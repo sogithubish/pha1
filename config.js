@@ -6,12 +6,8 @@
 *
 * Server configuration management
 *
-* Conditions:
-* 1. Use environment vars CFG_PORT, CFG_MSG, if set, otherwise
-* 2. Check if there is CFG_PWD direction to pirple-server-configurtion file, or
-* use process.cwd()
-* 3. Read <path>/pirple-server-configuration file if exists, otherwise
-* 4. Use default Port 3000 and Welcome Msg "Pirple welcomes you!"
+* Use environment var CFG_PORT or default value of 3000 to set up the port listening.
+*
 */
 
 var configuration = {};

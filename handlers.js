@@ -8,9 +8,12 @@
 *
 */
 
-
 var response = {};
 
+//If you want another one route just append it to the routes object below.
+//Do not forget to add hndler's code otherwise you get 404 response.
+
+//handler for /hello
 hello = function(){
   response.statusCode = 406;
   response.contentType = 'application/json';
@@ -23,6 +26,10 @@ notFound = function(){
   response.contentType = 'plain/text';
   response.data = {'not-found':'This route is not found.'};
 };
+
+/*
+* Place your handler function here
+*/
 
 const routes = {
   'hello': hello
